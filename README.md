@@ -2,6 +2,10 @@
 
 This is a sample application for the verification laboratory.
 
+## Modification by Tamás Deme
+
+This header above is the first example of my awesome markdown skills. **This sentence implies that I even know how to make things bold!** Finally, as a _third_ example I'll link [my own profile](https://github.com/tomzorz) here.
+
 ## Overview
 
 The application represents a simple train controller system with the following three components.
