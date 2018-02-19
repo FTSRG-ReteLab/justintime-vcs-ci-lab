@@ -61,4 +61,19 @@ public class TrainSystemTest {
 		controller.setSpeedLimit(5);
 		Assert.assertEquals(5, controller.getReferenceSpeed());
 	}
+
+	@Test
+	public void DuringNormalUsage_TachyWorks() {
+		sensor.overrideSpeedLimit(50);
+		user.overrideJoystickPosition(10);
+		controller.followSpeed();
+		controller.followSpeed();
+		controller.followSpeed();
+		user.overrideJoystickPosition(-3);
+		controller.followSpeed();
+		controller.followSpeed();
+		user.overrideJoystickPosition(0);
+
+		Assert.assertEquals(false, controller.getTachy().isEmpty());
+	}
 }
