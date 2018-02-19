@@ -9,6 +9,10 @@ import hu.bme.mit.train.user.TrainUserImpl;
 
 public class TrainSystem {
 
+	public TrainSystem() {
+		System.out.println("I'm a TrainSystem being created.");
+	}
+
 	private TrainController controller = new TrainControllerImpl();
 	private TrainUser user = new TrainUserImpl(controller);
 	private TrainSensor sensor = new TrainSensorImpl(controller, user);
