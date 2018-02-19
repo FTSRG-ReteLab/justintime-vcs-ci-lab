@@ -9,7 +9,7 @@ import hu.bme.mit.train.user.TrainUserImpl;
 
 public class TrainSystem {
 
-	private TrainSystem() {
+	public TrainSystem() {
 		System.out.println("I'm an Awesome TrainSystem being created.");
 	}
 
