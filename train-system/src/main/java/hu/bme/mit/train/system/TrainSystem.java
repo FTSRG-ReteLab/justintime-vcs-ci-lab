@@ -10,7 +10,7 @@ import hu.bme.mit.train.user.TrainUserImpl;
 public class TrainSystem {
 
 	public TrainSystem() {
-		System.out.println("I'm a TrainSystem being created.");
+		System.out.println("I'm an Awesome TrainSystem being created.");
 	}
 
 	private TrainController controller = new TrainControllerImpl();
